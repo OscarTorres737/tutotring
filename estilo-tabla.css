@@ -1,0 +1,60 @@
+		img{
+            width: 200px;
+        }
+        table {
+			width: 100%;
+			border-collapse: collapse;
+			margin: auto;
+		}
+		th, td {
+			text-align: center;
+			padding: 5px;
+			border: 1px solid #ddd;
+		}
+		th {
+			background-color: #fe612c;
+			color: white;
+		}
+		tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+        body {
+			margin: 0;
+			padding: 0;
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		
+		.navbar {
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			background-color: #fe612c;
+			overflow: hidden;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			padding: 10px 0;
+		}
+		
+		.navbar a {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			color: #f2f2f2;
+			text-decoration: none;
+			font-size: 12px;
+			margin: 0 5px;
+			opacity: 0.5;
+			transition: opacity 0.3s ease-in-out;
+		}
+		
+		.navbar a:hover {
+			opacity: 1;
+		}
+		
+		.navbar a img {
+			max-width: 30px;
+			max-height: 30px;
+		}

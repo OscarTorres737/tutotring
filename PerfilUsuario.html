@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="estilo-inicio.css">
+<link rel="stylesheet" type="text/css" href="estilo-tabla.css">
+<script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="scriptinicio.js"></script> 
+<script type="text/javascript" src="scriptGeolocalizacion.js"></script> 
+
+
+<script type="text/javascript" src="bd.js"></script> 
+<title>Inicio</title>
+</head>
+<body class="fondo" onload="inicializarBD();">
+
+  <div class="navbar">
+		<a href="inicio.html"><img src="https://cdn-icons-png.flaticon.com/512/63/63633.png" alt="Inicio"></a>
+		<a href="PerfilUsuario.html"><img src="https://cdn-icons-png.flaticon.com/512/16/16363.png" alt="Perfil"></a>
+		<a href="Configuracion.html"><img src="https://cdn-icons-png.flaticon.com/512/70/70314.png" alt="Configuración"></a>
+		<a href="index.html"><img src="https://cdn-icons-png.flaticon.com/512/3596/3596149.png" alt="Log out"></a>
+	</div>
+  
+    <h1>Perfil de Usuario</h1>
+    <img id="foto-de-perfil" src="" alt="Foto de Perfil">
+    <h2>Datos Personales</h2>
+    <ul>
+      <li><strong>Nombre:</strong> <span id="nombre"></span></li>
+      <li><strong>Edad:</strong> <span id="edad"></span></li>
+      <li><strong>Correo Electrónico:</strong> <span id="correo"></span></li>
+      <li><strong>Direccion:</strong> <span id="direccion"></span></li>
+      <button type="button" onclick="showPosition(); mostrardatos()">Mira tu direccion</button>
+      <div id="embedMap" style="width: 300px; height: 300px;">
+    </ul>
+
+</body>
+</html>

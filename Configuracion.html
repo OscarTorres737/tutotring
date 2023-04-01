@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="estilo-inicio.css">
+<link rel="stylesheet" type="text/css" href="estilo-tabla.css">
+<link rel="stylesheet" type="text/css" href="estilo-config.css">
+<script type="text/javascript" src="scriptinicio.js"></script> 
+
+<title>Configuración</title>
+</head>
+<body class="fondo" onload="inicializarBD()">
+
+  <div class="navbar">
+		<a href="inicio.html"><img src="https://cdn-icons-png.flaticon.com/512/63/63633.png" alt="Inicio"></a>
+		<a href="PerfilUsuario.html"><img src="https://cdn-icons-png.flaticon.com/512/16/16363.png" alt="Perfil"></a>
+		<a href="Configuracion.html"><img src="https://cdn-icons-png.flaticon.com/512/70/70314.png" alt="Configuración"></a>
+		<a href="index.html"><img src="https://cdn-icons-png.flaticon.com/512/3596/3596149.png" alt="Log out"></a>
+	</div>
+  
+	<div class="settings-container">
+		<h2>Configuración</h2>
+		<div class="setting-option">
+		  <label for="language-select">Cambiar idioma:</label>
+		  <select id="language-select">
+			<option value="es">Español</option>
+			<option value="en">English</option>
+		  </select>
+		</div>
+		<div class="setting-option">
+		  <label for="password-reset">Restablecer contraseña:</label>
+		  <input type="password" id="password-reset">
+		</div>
+		<div class="setting-option">
+		  <label for="dark-mode-toggle">Activar modo oscuro:</label>
+		  <input type="checkbox" id="dark-mode-toggle">
+		</div>
+		<div class="setting-option">
+		  <label for="talkback-toggle">Modo talkback:</label>
+		  <input type="checkbox" id="talkback-toggle">
+		</div>
+		<div>
+			<label for="">Haznos saber tus quejas y sugerencias</label>
+			<form action="mailto:oscarariel.torres737@gmail.com" method="post" enctype="text/plain">
+				<label for="nombre">Nombre:</label>
+				<input type="text" id="nombre" name="nombre" required><br>
+			  
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required><br>
+			  
+				<label for="asunto">Asunto:</label>
+				<input type="text" id="asunto" name="asunto" required><br>
+			  
+				<label for="mensaje">Mensaje:</label><br>
+				<textarea id="mensaje" name="mensaje" rows="5" cols="40" required></textarea><br>
+			  
+				<input type="submit" value="Enviar">
+			  </form>
+			  
+		</div>
+	  </div>
+	  
+
+</body>
+</html>

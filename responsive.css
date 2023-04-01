@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
+
+@media (max-width: 600px) {
+    .fondo{
+        background-image: url("https://uneg.edu.mx/wp-content/uploads/2022/05/11.-%C2%BFQue-es-una-universidad-sabatina_-min-scaled.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        position: relative;
+        }
+        .contenedor-login{
+            width: 104%;
+            margin-top: 50%;
+            
+            border-radius: 5px;
+        }
+        .panel-login{
+            width: 100%;
+            margin: 0;
+        }
+        .container-newuser{
+            margin-top: 45px;
+        }
+        a{
+            font-size: 100%;
+        }
+        input{
+            width: 100%;
+            
+        }
+        .contenedor-opciones{
+            width: 104%;
+            margin-top: 50%;
+            
+            border-radius: 5px;
+        }
+        .contenedor-botones{
+            width: 100%;
+            margin: 0;
+        }
+        .contenedor-register{
+            width: 100%;
+            height: 80%;
+        }
+        .panel-register{
+            width: 100%;
+            margin: 0;
+        }
+
+  }

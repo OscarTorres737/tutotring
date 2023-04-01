@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
+
+.fondo{
+background-image: url("https://uneg.edu.mx/wp-content/uploads/2022/05/11.-%C2%BFQue-es-una-universidad-sabatina_-min-scaled.jpg");
+background-attachment: fixed;
+background-size: cover;
+position: relative;
+}
+
+
+.contenedor-login {
+    width: 350px;
+    height: 550px;
+    background-color: #FD9351;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, 5%);
+    border-radius: 15px;
+    font-family: 'Candal';
+    color: white;
+    text-align: center;
+}
+.panel-login{
+    position: block;
+    /*Con el margen doy espacio entre los divs*/
+    margin-top: 50px;
+}
+.panel-login input{
+    color: #FD9351;
+    height: 35px;
+    width: 220px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    /*Con el margen doy espacio entre los divs*/
+    margin: 25px;
+}
+.btn-login{
+    font-family: 'Candal';
+    background-color: #fa560a;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 220px;
+    top: 0;
+    color: white;
+    padding: 9px 35px;
+    text-decoration: none;
+}
+.btn-login:hover{
+    background-color: orangered;
+}
+.container-forgot{
+    padding-left: 10px;
+    
+}
+.txt-forgot{
+    /*Con el margen doy espacio entre los divs*/
+    font-size: 10px;
+    text-decoration: none;
+    color: white;
+    padding-left: 150px;
+}
+.txt-forgot:hover{
+    color: orangered;
+}
+.container-newuser{
+    padding-right: 10px;
+    margin-top: 95px;
+}
+.txt-newuser{
+    font-size: 10px;
+    text-decoration: none;
+    color: white;
+    padding-right: 10px;
+}
+.txt-newuser:hover{
+color: orangered;
+}
+p{
+    font-size: 12px;
+}
+.btn-atras img{
+    width: 30px;
+    }

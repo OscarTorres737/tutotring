@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="favicon.ico">
+<script type="text/javascript" src="bd.js"></script>
+<link rel="stylesheet" type="text/css" href="estilo-register.css">
+
+
+<title>Crea tu cuenta</title>
+</head>
+<body class="fondo" onload="inicializarBD()">
+
+    <div class="btn-atras">
+        <a href="OpcionesNewUser.html">
+        <img src="https://cdn-icons-png.flaticon.com/512/126/126648.png">
+        </a>
+    </div>
+
+<div class="contenedor-register">
+<label>Registro</label>
+    <form>
+        <div class="panel-register">
+        <div><label>Nombre completo</label></div>
+        <div>
+        <input type="text" id="name" required minlength="12" maxlength="40">
+        </div>
+
+        <div><label>Correo electronico</label></div>
+        <div>
+            <input type="email" id="email" required maxlength="40">
+        </div>
+        <div><label>Contraseña</label></div>
+        <div>
+        <input type="password" id="pass" required minlength="12" maxlength="40">
+        </div>
+
+        <div><label>Edad</label></div>
+        <div class="div-flex">
+            <input type="number" id="edad" required min="12" max="70">
+            <div><label>Edad</label></div>
+            <select class="combo" id="sexo">
+                <!-- Opciones de la lista -->
+                <option value="Mujer">Mujer</option>
+                <option value="Hombre">Hombre</option> 
+                <option value="Otro">Otro</option>
+              </select>
+        </div>
+        <label>Direccion</label>
+        
+        <div>
+            <input type="text" id="latlng">
+            <div>
+                <label>Código postal</label>
+            </div>
+            <input type="number" id="CP" required maxlength="5">
+        </div>
+
+        <div>
+            <div><label>Horario</label></div>
+            <select class="combo" id="horario">
+                <!-- Opciones de la lista -->
+                <option value="Matutino">Matutino</option>
+                <option value="Vespertino">Vespertino</option> 
+              </select>
+        </div>
+        <button class="btn-login" id="insertar" onclick="Insertar(); abrir()">Registrate</button>
+        </div>
+        </div>
+    </form>
+
+
+</div>
+
+
+</body>
+</html>

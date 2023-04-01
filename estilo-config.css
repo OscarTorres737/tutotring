@@ -1,0 +1,38 @@
+.settings-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.setting-option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+input[type="password"],
+input[type="checkbox"],
+select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="password"] {
+  width: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  input[type="password"],
+  input[type="checkbox"],
+  select {
+    width: 100%;
+  }
+}
+ 

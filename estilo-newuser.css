@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
+
+.fondo{
+background-image: url("https://uneg.edu.mx/wp-content/uploads/2022/05/11.-%C2%BFQue-es-una-universidad-sabatina_-min-scaled.jpg");
+background-attachment: fixed;
+background-size: cover;
+position: relative;
+}
+.contenedor-opciones {
+    width: 350px;
+    height: 550px;
+    background-color: #FD9351;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, 5%);
+    border-radius: 15px;
+    font-family: 'Candal';
+    color: white;
+    text-align: center;
+    
+}
+.btn-newaccount{
+    
+    background-color: #fa560a;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    font-size: 12px;
+    top: 0;
+    color: white;
+    padding: 9px 35px;
+    text-decoration: none;
+
+}
+.contenedor-botones{
+    
+    width: auto;
+}
+.contenedor-opciones div{
+    margin-top: 60px;
+}
+.btn-facebook{
+background-color: #0a36fa;
+color: white;
+padding: 9px 35px;
+text-decoration: none;
+border-radius: 5px;
+font-size: 12px;
+}
+
+.btn-google{
+    background-color: #c8d0f5;
+    color: rgb(0, 0, 0);
+    padding: 9px 35px;
+    text-decoration: none;
+    border-radius: 5px; 
+    font-size: 12px;
+}
+
+.btn-atras img{
+width: 30px;
+}
