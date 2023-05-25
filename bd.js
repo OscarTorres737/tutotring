@@ -36,14 +36,16 @@ sessionStorage.setItem('edad', age);
 mi_bd.transaction(function (tran){
     tran.executeSql('INSERT INTO Usuarios ( Name, MailID, Password, Age, Sexo, Address, CP, Turno) VALUES (?, ?, ?, ?, ?, ?, ?, ?)',[name, MailID, password, age, sexo, Address, CP, Turno]);
 });
+
+window.location.assign("DatosUsuario.html");
 }
 
 function abrir() {
-  window.location.assign("DatosUsuario.html");
+  
 }
 
 function abrirDos() {
-  window.location.href = "inicio.html";
+  window.location.assign("inicio.html"); 
 }
 
 
