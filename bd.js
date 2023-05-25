@@ -42,9 +42,11 @@ function abrir() {
   window.location.assign("DatosUsuario.html");
 }
 
-function abrirDos(){
-  window.open("inicio.html");
+function abrirDos() {
+  window.location.href = "inicio.html";
 }
+
+
 function session(){
     inicializarBD();
     // Definir el nombre de usuario que se va a buscar
