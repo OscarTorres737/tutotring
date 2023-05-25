@@ -58,3 +58,9 @@
 			max-width: 30px;
 			max-height: 30px;
 		}
+
+		.modo-oscuro table tbody tr {
+  			background-color: #1f1f1f;
+  			color: #ffffff;
+		}
+

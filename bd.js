@@ -38,9 +38,10 @@ mi_bd.transaction(function (tran){
 });
 }
 
-function abrir(){
-  window.open("DatosUsuario.html");
+function abrir() {
+  window.location.assign("DatosUsuario.html");
 }
+
 function abrirDos(){
   window.open("inicio.html");
 }

@@ -28,3 +28,19 @@
   color: #fff;
   text-decoration: none;
 }
+.modo-oscuro {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+.modo-oscuro a {
+  color: #ffffff;
+}
+.modo-oscuro .navbar {
+  background-color: #333;
+  color: #fff;
+}
+
+.modo-oscuro .navbar a {
+  color: #fff;
+}
