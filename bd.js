@@ -17,27 +17,28 @@ function inicializarBD() {
 
 function Insertar(){
 var name = document.getElementById("name").value;
-var MailID = document.getElementById("email").value;
-var password = document.getElementById("pass").value
-var age =document.getElementById("edad").value;
-var sexo = document.getElementById("sexo").value;
-var Address =document.getElementById("latlng").value;
-var CP=document.getElementById("CP").value;
-var Turno =document.getElementById("horario").value;
+  var MailID = document.getElementById("email").value;
+  var password = document.getElementById("pass").value;
+  var age = document.getElementById("edad").value;
+  var sexo = document.getElementById("sexo").value;
+  var Address = document.getElementById("latlng").value;
+  var CP = document.getElementById("CP").value;
+  var Turno = document.getElementById("horario").value;
 
+  // Guardar los valores en sessionStorage
+  sessionStorage.setItem('correo', MailID);
+  sessionStorage.setItem('password', password);
+  sessionStorage.setItem('edad', age);
 
-// Guardar los valores en sessionStorage
-sessionStorage.setItem('correo', MailID);
-sessionStorage.setItem('password', password);
-sessionStorage.setItem('edad', age);
-
-
-
-mi_bd.transaction(function (tran){
-    tran.executeSql('INSERT INTO Usuarios ( Name, MailID, Password, Age, Sexo, Address, CP, Turno) VALUES (?, ?, ?, ?, ?, ?, ?, ?)',[name, MailID, password, age, sexo, Address, CP, Turno]);
-});
-
-window.location.assign("DatosUsuario.html");
+  mi_bd.transaction(function (tran) {
+    tran.executeSql('INSERT INTO Usuarios (Name, MailID, Password, Age, Sexo, Address, CP, Turno) VALUES (?, ?, ?, ?, ?, ?, ?, ?)', [name, MailID, password, age, sexo, Address, CP, Turno], function (tx, result) {
+      // Verificar si se realizó la inserción correctamente
+      if (result.rowsAffected > 0) {
+        // Redirigir a la página "DatosUsuario.html" después de completar la inserción
+        window.location.assign("DatosUsuario.html");
+      }
+    });
+  });
 }
 
 function abrir() {
